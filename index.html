@@ -1,1 +1,148 @@
-Contenido de prueba para index.html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AppFusión</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header { background: #0066cc; color: white; padding: 1em; display: flex; align-items: center; }
+    header img { height: 40px; margin-right: 10px; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; }
+    section { padding: 2em; }
+    .servicios ul { list-style: disc; margin-left: 1.5em; }
+    .reserva-form { max-width: 400px; margin: auto; }
+    .reserva-form label { display: block; margin: 0.5em 0 0.2em; }
+    .reserva-form input, .reserva-form textarea { width: 100%; padding: 0.5em; }
+    .reserva-form button { background: #0066cc; color: white; border: none; padding: 0.7em; margin-top: 1em; cursor: pointer; width: 100%; }
+    footer { background: #f0f0f0; padding: 1em; text-align: center; }
+    .catalogo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; padding: 2em 0; }
+    .catalogo-item { border: 1px solid #ddd; padding: 1em; border-radius: 10px; }
+    .catalogo-item img { width: 100%; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="AppFusión Logo">
+    <h1>AppFusión</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#reservas">Reservas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a AppFusión</h2>
+    <p>Conecta tu negocio con tus clientes desde cualquier celular.</p>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Diseño de apps web</li>
+      <li>Personalización de marca</li>
+      <li>Integraciones con WhatsApp</li>
+    </ul>
+  </section>
+
+  <section id="catalogo">
+    <h2>Apps hechas para todo tipo de negocios</h2>
+    <p style="text-align:center;">Aquí algunos ejemplos para que te inspires. ¡Tu app puede ser la próxima!</p>
+    <div class="catalogo-grid">
+      <div class="catalogo-item">
+        <img src="cirujana.jpg" alt="App Cirugía Plástica">
+        <h3>Clínicas y Cirujanas Plásticas</h3>
+        <p>Agenda tus citas, muestra tratamientos con estilo y recibe consultas directo al WhatsApp.</p>
+      </div>
+      <div class="catalogo-item">
+        <img src="ingeniero.jpg" alt="App Ingenieros">
+        <h3>Ingenieros</h3>
+        <p>Muestra tus proyectos, agrega fotos de obras y recibe solicitudes de cotización sin complicaciones.</p>
+      </div>
+      <div class="catalogo-item">
+        <img src="ganaderia.jpg" alt="App Ganadería">
+        <h3>Ganaderías</h3>
+        <p>Catálogo de animales, manejo de pedidos y contacto directo para compradores desde el celular.</p>
+      </div>
+      <div class="catalogo-item">
+        <img src="restaurante.jpg" alt="App Restaurante">
+        <h3>Restaurantes</h3>
+        <p>Menú digital, reservas de mesa y pedidos por WhatsApp. Ideal para fidelizar clientes.</p>
+      </div>
+      <div class="catalogo-item">
+        <img src="hotel.jpg" alt="App Hotel">
+        <h3>Hoteles y Alojamiento</h3>
+        <p>Galería de habitaciones, botón de reservas, ubicación con mapa y contacto rápido.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservas">
+    <h2>Reservas</h2>
+    <form class="reserva-form" action="#" method="post">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required />
+      <label for="servicio">Servicio deseado</label>
+      <input type="text" id="servicio" name="servicio" required />
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="fecha" required />
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" required />
+      <label for="mensaje">Comentarios adicionales</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      <button type="submit">Enviar reserva</button>
+    </form>
+  </section>
+
+  <section id="inicio">
+  <p>
+    <a href="https://wa.me/573043369832?text=Hola%20AppFusión%2C%20necesito%20más%20info"
+       style="display: inline-flex; align-items: center; text-decoration: none; background: #25D366; color: white; padding: 10px 15px; border-radius: 8px; font-weight: bold;"
+       target="_blank">
+      <img src="logo.png" alt="Logo AppFusión" style="height: 24px; margin-right: 8px;">
+      Escríbenos por WhatsApp
+    </a>
+  </p>
+</section>
+<section id="reservas">
+  <h2>Reservas</h2>
+  <form class="reserva-form" action="#" method="post">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required />
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" required />
+    <label for="servicio">Servicio deseado</label>
+    <input type="text" id="servicio" name="servicio" required />
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha" name="fecha" required />
+    <label for="hora">Hora</label>
+    <input type="time" id="hora" name="hora" required />
+    <label for="mensaje">Comentarios adicionales</label>
+    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    <button type="submit">Enviar reserva</button>
+  </form>
+  <p style="text-align:center; margin-top: 1em;">
+    <a href="https://wa.me/573043369832?text=Hola%2C%20quiero%20hacer%20una%20reserva"
+       style="display: inline-flex; align-items: center; text-decoration: none; background: #25D366; color: white; padding: 10px 15px; border-radius: 8px; font-weight: bold;"
+       target="_blank">
+      <img src="logo.png" alt="Logo AppFusión" style="height: 24px; margin-right: 8px;">
+      Reserva por WhatsApp
+    </a>
+  </p>
+</section>
+    <h2>Contacto</h2>
+    <p>WhatsApp: <a href="https://wa.me/573001234567?text=Hola%20AppFusión%2C%20quiero%20una%20app%20personalizada" target="_blank">¡Contáctanos por WhatsApp!</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 AppFusión. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

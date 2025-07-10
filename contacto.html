@@ -2,42 +2,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacto | AppFusión</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 2em; }
-    .contact-info { max-width: 600px; margin: auto; }
-    h1 { color: #0066cc; }
-    .whatsapp-btn {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-      background: #25D366;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .whatsapp-btn img { height: 24px; margin-right: 8px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - AppFusion</title>
 </head>
 <body>
-  <div class="contact-info">
-    <h1>Contacto directo</h1>
-    <p><strong>Nombre:</strong> Alberto Perdomo</p>
-    <p><strong>Dirección:</strong> Calle 15 No. 45-02</p>
-    <p><strong>Ciudad:</strong> Villavicencio, Meta, Colombia</p>
-    <p><strong>WhatsApp:</strong> +57 304 336 9832</p>
-    <p><strong>Correo:</strong> gd3po@yahoo.com</p>
-    <p>
-      <a href="https://wa.me/573043369832?text=Hola%2C%20quiero%20una%20app%20personalizada"
-         class="whatsapp-btn" target="_blank">
-        <img src="logo.png" alt="Logo AppFusión">
-        Escríbeme por WhatsApp
-      </a>
-    </p>
-  </div>
+  <h1>Formulario de contacto</h1>
+  <form>
+    <label>Nombre:<br><input type="text" name="nombre" required></label><br>
+    <label>Email:<br><input type="email" name="email" required></label><br>
+    <label>Mensaje:<br><textarea name="mensaje" required></textarea></label><br>
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>

@@ -1,1 +1,1 @@
-Contenido simulado para README.md
+Contenido de prueba para README.md
